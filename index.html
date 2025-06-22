@@ -12,14 +12,14 @@
     <nav>
         <h1>to<span style="color: red;">ur</span>is<span style="color: red;">me</span></h1>
         <div>
-            <ul>
+            <span class="hamburger" id="hamburger">&#9776;</span> <!-- Hamburger icon -->
+            <ul id="nav-list">
                 <li><a href="#section1">home</a></li>
                 <li><a href="#section2">destination</a></li>
                 <li><a href="#section3">mapmonde</a></li>
                 <li><a href="#service">service</a></li>
                 <li><a href="#section5">reserver</a></li>
                 <li><a href="#footer">contacts</a></li>
-
             </ul>
         </div>
     </nav>
@@ -150,6 +150,13 @@
             </div>
         </footer>
     </main>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navList = document.getElementById('nav-list');
+    hamburger.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
+</script>
 </body>
 
 </html>
